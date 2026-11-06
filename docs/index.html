@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>MacXray: your Mac, from the inside</title>
+<meta name="description" content="MacXray shows what your Mac is doing right now: every app and the processes behind it, the files they change, who they talk to, each core, the memory, the battery and everything you copy. Live, in plain English. Free for macOS Sequoia or later.">
+<link rel="canonical" href="https://victorabuchi.github.io/macxray-app/">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/icon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#f4f8f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#061215" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MacXray">
+<meta property="og:title" content="MacXray: your Mac, from the inside">
+<meta property="og:description" content="See what your Mac is doing right now, live and in plain English. Free for macOS Sequoia or later.">
+<meta property="og:url" content="https://victorabuchi.github.io/macxray-app/">
+<meta property="og:image" content="https://victorabuchi.github.io/macxray-app/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon-64.png" alt="" width="28" height="28">MacXray</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#views">What it shows</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#every-mac">Requirements</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="btn" href="download/">Download</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow"><span class="live" aria-hidden="true"></span>Live · For every Mac</span>
+      <h1>Your Mac, <span>from the inside.</span></h1>
+      <p class="lede">MacXray shows what your Mac is doing right now: every app and the processes behind it, the files they change, who they talk to, each core of the chip, the memory, the battery and everything you copy. Live, and in plain English.</p>
+      <div class="actions">
+        <a class="btn" href="download/"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10M5.5 8.8 10 13.3l4.5-4.5M4 16.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
+        <a class="btn line" href="#views">See what it shows</a>
+      </div>
+      <p class="meta"><span>Free</span><span>macOS Sequoia 15 or later</span><span>Apple silicon and Intel</span><span>Notarized by Apple</span></p>
+      <svg class="ecg" viewBox="0 0 1000 70" preserveAspectRatio="none" aria-hidden="true">
+        <path class="trace" d="M0 40H290Q300 33 310 40H340L348 46L360 6L372 62L380 40H410Q428 24 446 40H690Q700 33 710 40H740L748 46L760 6L772 62L780 40H810Q828 24 846 40H1000"/>
+        <path class="beat" pathLength="2000" d="M0 40H290Q300 33 310 40H340L348 46L360 6L372 62L380 40H410Q428 24 446 40H690Q700 33 710 40H740L748 46L760 6L772 62L780 40H810Q828 24 846 40H1000"/>
+      </svg>
+      <figure class="window scan">
+        <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+        <picture>
+          <source srcset="assets/shots/now-dark.webp" media="(prefers-color-scheme: dark)">
+          <img src="assets/shots/now-light.webp" width="2000" height="1250" fetchpriority="high" alt="MacXray's Now view: the Mac drawn as an x-ray, with its chip's cores, memory, battery cells, network and disk each lit by a live reading, under one sentence that sums them up">
+        </picture>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" id="story">
+    <div class="wrap">
+      <span class="eyebrow">In plain English</span>
+      <h2 class="title">It tells you what just happened.</h2>
+      <p class="lede">Your Mac does thousands of things a minute. MacXray turns the ones worth knowing into sentences, the moment they happen.</p>
+      <ol class="feed">
+        <li><time>09:41:12</time><span class="who">Clipboard</span><p>You copied an image in Safari. It went to pboard in 2 formats.</p></li>
+        <li><time>09:41:07</time><span class="who">Clipboard</span><p>Passwords copied something sensitive (probably a password). MacXray didn't read or save it.</p></li>
+        <li><time>09:40:52</time><span class="who">Processes</span><p>You opened Xcode. It runs as 6 processes: the one you see and 5 helpers out of sight.</p></li>
+        <li><time>09:40:31</time><span class="who">Network</span><p>Safari started talking to Apple.</p></li>
+        <li><time>09:39:58</time><span class="who">CPU cores</span><p>Your 4 Performance cores just went to work (82% busy). Busiest: Xcode.</p></li>
+        <li><time>09:39:12</time><span class="who">Files</span><p>Xcode changed 412 files in 10 seconds (caches).</p></li>
+        <li><time>09:38:40</time><span class="who">Memory</span><p>Memory pressure changed to warning. Getting tight. macOS is compressing memory and may start using the disk (swap).</p></li>
+        <li><time>09:38:05</time><span class="who">Battery</span><p>Charger connected (96 W).</p></li>
+      </ol>
+      <p class="note">These are MacXray's own sentences. On your Mac, the names and numbers are yours.</p>
+    </div>
+  </section>
+
+  <section id="clipboard">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Clipboard</span>
+        <h2 class="title">Everything you copy, kept.</h2>
+        <p class="lede">MacXray keeps what you copy, every format of every copy, in full. Go back to anything you copied and copy it again.</p>
+        <ul class="points">
+          <li><strong>Nothing cut short.</strong> Long text, links, code, rich text and files, shown whole.</li>
+          <li><strong>Images exactly as you copied them,</strong> at full size. Copy them again, save them or open them.</li>
+          <li><strong>Find it again.</strong> Search everything you copied, pin what you use most, and delete any copy or clear the lot.</li>
+          <li><strong>Passwords stay secret.</strong> Copies that password managers mark as sensitive are never read or saved.</li>
+        </ul>
+      </div>
+      <figure class="window">
+        <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+        <picture>
+          <source srcset="assets/shots/clipboard-dark.webp" media="(prefers-color-scheme: dark)">
+          <img src="assets/shots/clipboard-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="MacXray's Clipboard view: a history of copies from Safari, Notes and Xcode, and the latest, an image, shown exactly as copied with its formats">
+        </picture>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" id="views">
+    <div class="wrap">
+      <span class="eyebrow">What it shows</span>
+      <h2 class="title">Every part of your Mac, live.</h2>
+      <p class="lede">Nine views, each one a live reading from your Mac with what it means written next to it.</p>
+      <div class="tour">
+        <div class="tabs" role="tablist" aria-label="MacXray's views">
+          <button role="tab" id="t-now" aria-controls="v-now" aria-selected="true">Now</button>
+          <button role="tab" id="t-clipboard" aria-controls="v-clipboard" aria-selected="false" tabindex="-1">Clipboard</button>
+          <button role="tab" id="t-processes" aria-controls="v-processes" aria-selected="false" tabindex="-1">Processes</button>
+          <button role="tab" id="t-files" aria-controls="v-files" aria-selected="false" tabindex="-1">Files</button>
+          <button role="tab" id="t-network" aria-controls="v-network" aria-selected="false" tabindex="-1">Network</button>
+          <button role="tab" id="t-cpu" aria-controls="v-cpu" aria-selected="false" tabindex="-1">CPU cores</button>
+          <button role="tab" id="t-memory" aria-controls="v-memory" aria-selected="false" tabindex="-1">Memory</button>
+          <button role="tab" id="t-battery" aria-controls="v-battery" aria-selected="false" tabindex="-1">Battery</button>
+          <button role="tab" id="t-log" aria-controls="v-log" aria-selected="false" tabindex="-1">System log</button>
+        </div>
+        <div class="panels">
+          <div class="panel" role="tabpanel" id="v-now" aria-labelledby="t-now">
+            <h3>Everything at a glance</h3>
+            <p>Your Mac drawn as an x-ray: the chip's cores, the memory, the battery's cells, the network and the disk, each lit by a live reading, with one sentence that sums it all up. Click any part to look inside it.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/now-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/now-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The Now view: an x-ray of the Mac with live readings"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-clipboard" aria-labelledby="t-clipboard">
+            <h3>Every copy, every format</h3>
+            <p>See which app made each copy and every format it was stored in, inside a system process called pboard. Copy any of them again. Images keep every pixel.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/clipboard-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/clipboard-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The Clipboard view: past copies and the formats of the latest one"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-processes" aria-labelledby="t-processes">
+            <h3>Every program, explained</h3>
+            <p>Your Mac runs hundreds of programs, and you opened a handful of them. See each app with the helpers it splits into below the waterline and the memory they take, then click any of them to learn what it is and why it's running.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/processes-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/processes-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The Processes view: each app as an iceberg of the processes it runs, sized by memory"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-files" aria-labelledby="t-files">
+            <h3>The disk's heartbeat</h3>
+            <p>macOS records every change to every file. MacXray shows which app is changing what, sorted into your own files, app data, caches, settings and logs. It never reads what's inside them.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/files-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/files-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The Files view: changes across the disk over time, sorted by kind of folder, and the apps writing them"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-network" aria-labelledby="t-network">
+            <h3>Who your Mac talks to</h3>
+            <p>Every live connection, from the app that opened it to the company on the other end, with what's flowing each way, the port it uses and whether anyone along the way could read it.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/network-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/network-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The Network view: apps on the left, the companies they talk to on the right, with traffic flowing between them"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-cpu" aria-labelledby="t-cpu">
+            <h3>Inside the chip</h3>
+            <p>Every core's load, second by second: the fast cores and the Efficiency cores, the graphics, and how warm macOS thinks the chip is running.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/cpu-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/cpu-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The CPU cores view: each core of the chip as a tile coloured by how busy it is, with the graphics and memory"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-memory" aria-labelledby="t-memory">
+            <h3>Where your memory went</h3>
+            <p>What's in use, what macOS has squeezed to save room, what it keeps as cache, and the pressure macOS feels, in the same terms it uses itself.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/memory-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/memory-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The Memory view: blocks of memory coloured by what they hold, with memory pressure and compression"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-battery" aria-labelledby="t-battery">
+            <h3>Energy in and out</h3>
+            <p>Charge, health and charge cycles, the cells inside, the power flowing from the charger and the battery, and the battery chip's own readings, translated.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/battery-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/battery-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The Battery view: power flowing between the charger, the Mac and the battery's cells, with the battery's health"></picture>
+            </figure>
+          </div>
+          <div class="panel" role="tabpanel" id="v-log" aria-labelledby="t-log">
+            <h3>macOS's diary</h3>
+            <p>Thousands of entries a second, grouped by the part of macOS that wrote them, with errors counted and what each part does explained.</p>
+            <figure class="window">
+              <div class="titlebar" aria-hidden="true"><i></i><i></i><i></i><b>MacXray</b></div>
+              <picture><source srcset="assets/shots/log-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/shots/log-light.webp" width="2000" height="1250" loading="lazy" decoding="async" alt="The System log view: entries per second over the last minute and who in macOS is writing them"></picture>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="wrap">
+      <span class="eyebrow">Private by design</span>
+      <h2 class="title">It all stays on your Mac.</h2>
+      <p class="lede">MacXray looks inside your Mac so that you can, and keeps what it sees to itself.</p>
+      <div class="cols">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg>
+          <h3>No account, no cloud</h3>
+          <p>MacXray runs entirely on your Mac and works offline. There's nothing to sign up for.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="12" cy="12" r="2.5"/><path d="M4 4l16 16"/></svg>
+          <h3>No tracking</h3>
+          <p>No analytics and no ads. Nothing about you or what you do is sent anywhere.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 3.5h6v3H9zM9 12h6M9 16h4"/></svg>
+          <h3>Your history, on your Mac</h3>
+          <p>Your copies are saved in a file on your Mac. Delete one, or all of them, whenever you like.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <h3>Passwords never read</h3>
+          <p>Copies that password managers mark as sensitive are skipped: never read and never saved.</p>
+        </div>
+      </div>
+      <a class="more" href="privacy/">Read the privacy policy →</a>
+    </div>
+  </section>
+
+  <section class="band" id="every-mac">
+    <div class="wrap">
+      <span class="eyebrow">For every Mac</span>
+      <h2 class="title">Made for every Mac on macOS Sequoia or later.</h2>
+      <dl class="spec">
+        <div><dt>macOS</dt><dd>macOS Sequoia 15 or later</dd></div>
+        <div><dt>Chip</dt><dd>Apple silicon and Intel<small>One app that runs natively on both.</small></dd></div>
+        <div><dt>Macs</dt><dd>MacBook Air (2020 and later), MacBook Pro (2018 and later), iMac, Mac mini, Mac Studio and Mac Pro<small>On a Mac without a battery, the Battery view simply says so.</small></dd></div>
+        <div><dt>Footprint</dt><dd>A 4 MB download, 5 MB installed<small>While it runs, usually a few percent of one core and under 100 MB of memory.</small></dd></div>
+        <div><dt>Security</dt><dd>Signed with a Developer ID and notarized by Apple<small>Apple checked it for malware, so it opens like any other app.</small></dd></div>
+        <div><dt>Price</dt><dd>Free</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="install">
+    <div class="wrap">
+      <span class="eyebrow">Install</span>
+      <h2 class="title">Ready in a minute.</h2>
+      <ol class="steps">
+        <li><strong>Download MacXray.</strong> It's a 4 MB disk image, from this site or from GitHub.</li>
+        <li><strong>Open it and drag MacXray into Applications.</strong></li>
+        <li><strong>Open MacXray.</strong> The first time, macOS asks whether you're sure. Click Open.</li>
+      </ol>
+      <div class="actions"><a class="btn" href="download/">Download for Mac</a></div>
+    </div>
+  </section>
+
+  <section class="band" id="faq">
+    <div class="wrap">
+      <span class="eyebrow">Questions</span>
+      <h2 class="title">Good to know.</h2>
+      <div class="faq">
+        <details><summary>Is MacXray free?</summary><p>Yes. Download it and use it on as many of your Macs as you like.</p></details>
+        <details><summary>Will it slow my Mac down?</summary><p>No. MacXray reads the counters macOS already keeps, the same ones Activity Monitor uses. It usually needs a few percent of one core and under 100 MB of memory, and it does the detailed work only for the view you have open.</p></details>
+        <details><summary>Can it change anything on my Mac?</summary><p>MacXray only watches. It doesn't change settings, delete files or quit apps. The one thing it changes is your clipboard, when you ask it to copy something again.</p></details>
+        <details><summary>Does it work on Intel Macs?</summary><p>Yes. MacXray is one app that runs natively on Apple silicon and on Intel Macs with macOS Sequoia or later. On an Intel Mac the CPU view shows a single kind of core, because Intel chips don't have Efficiency cores.</p></details>
+        <details><summary>Why isn't it in the Mac App Store?</summary><p>Apps from the Mac App Store run in a sandbox that keeps them from reading the system log and from watching files across the whole disk, which is much of what MacXray shows you. So it comes from here instead, signed and notarized by Apple, which checked it for malware.</p></details>
+        <details><summary>Where is my clipboard history kept?</summary><p>On your Mac, in <code>~/Library/Application Support/MacXray</code>. In the Clipboard view you can delete single copies, or clear everything except the copies you pinned.</p></details>
+        <details><summary>How do I uninstall it?</summary><p>Quit MacXray and drag it from Applications to the Trash. To remove your clipboard history too, delete the <code>MacXray</code> folder in <code>~/Library/Application Support</code>.</p></details>
+        <details><summary>Is MacXray made by Apple?</summary><p>No. MacXray is made by Victor Abuchi, an independent developer. It isn't affiliated with or endorsed by Apple.</p></details>
+        <details><summary>Something isn't right. How do I tell you?</summary><p><a href="https://github.com/victorabuchi/macxray-app/issues/new">Open an issue on GitHub</a> with what you saw, your Mac's model and its macOS version.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <img src="assets/icon-192.webp" alt="" width="96" height="96" loading="lazy">
+      <h2>See inside your Mac.</h2>
+      <p class="lede">Free for macOS Sequoia or later, on Apple silicon and Intel.</p>
+      <div class="actions">
+        <a class="btn" href="download/"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10M5.5 8.8 10 13.3l4.5-4.5M4 16.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
+        <a class="btn line" href="https://github.com/victorabuchi/macxray-app/releases">All versions on GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="who">MacXray by Victor Abuchi</span>
+    <a href="download/">Download</a>
+    <a href="#faq">Questions</a>
+    <a href="privacy/">Privacy</a>
+    <a href="terms/">Terms</a>
+    <a href="https://github.com/victorabuchi/macxray-app">GitHub</a>
+    <a href="https://github.com/victorabuchi/macxray-app/issues/new">Report a problem</a>
+    <p class="fine">Apple, Mac, MacBook and macOS are trademarks of Apple Inc. MacXray isn't affiliated with or endorsed by Apple.</p>
+  </div>
+</footer>
+
+<script>
+// The views as tabs, like the app's sidebar: click one, or move with the arrow keys. Without this script every view
+// shows, one after another.
+(() => {
+  const tabs = [...document.querySelectorAll('.tabs [role="tab"]')];
+  const show = (tab, focus) => {
+    for (const t of tabs) {
+      const on = t === tab;
+      t.setAttribute("aria-selected", String(on));
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+    }
+    if (focus) tab.focus();
+  };
+  tabs.forEach((tab, i) => {
+    tab.addEventListener("click", () => show(tab));
+    tab.addEventListener("keydown", (e) => {
+      const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+      if (!step) return;
+      e.preventDefault();
+      show(tabs[(i + step + tabs.length) % tabs.length], true);
+    });
+  });
+  if (tabs.length) show(tabs[0]);
+})();
+</script>
+</body>
+</html>

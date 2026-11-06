@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Privacy – MacXray</title>
+<meta name="description" content="MacXray doesn't collect your data. What it reads on your Mac, what it keeps there, and the one time it uses the network.">
+<link rel="canonical" href="https://victorabuchi.github.io/macxray-app/privacy/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../assets/icon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#f4f8f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#061215" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/icon-64.png" alt="" width="28" height="28">MacXray</a>
+    <nav class="links" aria-label="Sections">
+      <a href="../#views">What it shows</a>
+      <a href="../#faq">Questions</a>
+    </nav>
+    <a class="btn" href="../download/">Download</a>
+  </div>
+</header>
+
+<main id="main" class="wrap doc">
+  <h1>Privacy</h1>
+  <p class="updated">Updated 6 November 2026</p>
+  <p class="lede">MacXray doesn't collect your data. There's no account, no analytics, no ads and no tracking, and nothing MacXray sees on your Mac is sent to us or to anyone else.</p>
+
+  <h2>What MacXray reads on your Mac</h2>
+  <p>To show you what your Mac is doing, MacXray reads what macOS reports about itself:</p>
+  <ul>
+    <li>The programs running and how much memory and processor time each one uses.</li>
+    <li>Which files change and where. MacXray sees that a file changed, never what's inside it.</li>
+    <li>Network connections: which app opened them, the server and port on the other end, and how much data flows. It never sees what's sent.</li>
+    <li>The processor's cores, the graphics, memory, temperature state and the battery's readings.</li>
+    <li>The system log that macOS writes as it works.</li>
+    <li>What you copy to the clipboard, in every format it was copied in.</li>
+  </ul>
+  <p>All of this stays in memory while MacXray runs and is gone when you quit it, except your clipboard history.</p>
+
+  <h2>Your clipboard history</h2>
+  <p>MacXray saves what you copy so you can find it and copy it again. The history is a file on your Mac, in <code>~/Library/Application Support/MacXray</code>, and never leaves it.</p>
+  <ul>
+    <li>Copies that password managers mark as sensitive are never read or saved. Neither are copies that apps mark as temporary.</li>
+    <li>In the Clipboard view you can delete any copy, clear everything except the copies you pinned, or pause saving.</li>
+    <li>To remove the history completely, quit MacXray and delete that folder.</li>
+  </ul>
+
+  <h2>When MacXray uses the network</h2>
+  <p>Only to name the servers your apps talk to. For an address such as 17.253.144.10, MacXray asks your Mac's usual DNS server (often your router or your internet provider) for its name, just as many network tools do. Nothing else is sent: MacXray has no account, doesn't check in with us and doesn't use any online service.</p>
+
+  <h2>MacXray's window</h2>
+  <p>MacXray's window shows a page that MacXray serves to your own Mac at 127.0.0.1, an address no other computer can reach. It refuses requests from websites, so a page open in your browser can't read it. Open in Browser shows the same page in your browser, still served only to your Mac.</p>
+
+  <h2>Permissions</h2>
+  <p>MacXray doesn't need your password or administrator rights. A few readings, such as the Neural Engine's load, need administrator rights, so MacXray shows them as unavailable instead of asking for them.</p>
+
+  <h2>This website</h2>
+  <p>This website has no cookies, no analytics and no trackers, and it loads nothing from other services. GitHub Pages hosts it and GitHub Releases serves the download, so GitHub receives the usual details of each visit, such as your IP address, as described in <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If MacXray starts to handle data differently, this page will say so first, with a new date at the top.</p>
+
+  <h2>Questions</h2>
+  <p>Ask on <a href="https://github.com/victorabuchi/macxray-app/issues/new">GitHub</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="who">MacXray by Victor Abuchi</span>
+    <a href="../">Home</a>
+    <a href="../download/">Download</a>
+    <a href="../terms/">Terms</a>
+    <a href="https://github.com/victorabuchi/macxray-app">GitHub</a>
+    <p class="fine">Apple, Mac, MacBook and macOS are trademarks of Apple Inc. MacXray isn't affiliated with or endorsed by Apple.</p>
+  </div>
+</footer>
+</body>
+</html>
